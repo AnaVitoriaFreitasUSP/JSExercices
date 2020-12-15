@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <script>
+        var string1 = "Olá";
+        var string2 = "Mundo";
+        function concatena(string1, string2){
+            return string1.concat(" " + string2);
+        }
+
+        
+        function saudacao(){
+            var nome = prompt('Qual o seu nome? ');
+            return 'Olá ' + nome + '.' + ' Tudo bem ' + nome + '?'
+        }
+        
+        
+        function restoNove(){
+            var valor = prompt('Digite um valor: ');
+            if(isNaN(valor)){
+                return 'Tente novamente!'
+            }
+            else{
+                return 'O resto de ' + valor + ' dividido por 9 é: ' + valor % 9;
+            }
+        }
+        
+        document.write(concatena(string1, string2));
+        document.write("<br>" + saudacao());
+        document.write("<br>" + restoNove());
+    </script>
+</body>
+</html>
