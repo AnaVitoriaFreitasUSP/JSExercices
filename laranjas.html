@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var qtVizinhos = 8;
+        var qtLaranjas = 23;
+
+        function sobraJoselito(qtLaranjas, qtVizinhos){
+            return qtLaranjas % qtVizinhos;
+        }
+        function divisaoLaranjas(qtVizinhos, qtLaranjas){
+            return Math.floor(qtLaranjas/ qtVizinhos);
+        }
+        document.write("Se Joselito tem " + qtLaranjas + " laranjas e "+ qtVizinhos + " vizinhos, cada um recebe: " + divisaoLaranjas(qtVizinhos, qtLaranjas) + " laranjas.");
+        document.write("<br>Dessa forma, sobram " + sobraJoselito(qtLaranjas, qtVizinhos) + " laranjas para Joselito");
+
+    </script>
+</body>
+</html>
