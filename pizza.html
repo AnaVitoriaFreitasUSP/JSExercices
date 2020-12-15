@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+    <input type="button" id = "nome" onclick="recebeValores()" value="Pizzaria Resilia">
+
+    <script>
+        
+        function imposto(precoVendido){
+            return precoVendido * 8.9/100;
+        }
+        
+        function lucroLiquido(precoVendido, custoProducao){
+            return precoVendido - custoProducao;
+        }
+        
+        function mostraMensagem(nomePizza, lucro, imposto){
+            document.write("Para a pizza de " + nomePizza + " o lucro líquido é de R$" + lucro + " e o imposto é de R$" + imposto + " por pizza produzida.");
+        }
+
+        
+
+        function recebeValores(){
+            var nomePizza = prompt('Qual o sabor da pizza? ');
+            var custoProducao = prompt('Qual o custo para fazer a pizza de ' + nomePizza + '? ');
+            var precoVendido = prompt('Qual o preço que a pizza é vendida ' + nomePizza + '? ');
+
+            var taxa = imposto(precoVendido);
+            var lucro = lucroLiquido(precoVendido, custoProducao);
+
+            mostraMensagem(nomePizza, lucro, taxa);
+
+        }
+
+
+    
+    </script>
+     
+</body>
+</html>
