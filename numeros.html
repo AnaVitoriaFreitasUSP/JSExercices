@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+var inicial = prompt('digite um numero:');
+var contador = 0;
+maiorUm = 0;
+maiorDois = 0;
+
+while(contador < inicial){
+    var entrada = prompt('digite um numero:');
+    contador++
+
+    if(entrada > maiorUm){
+        maiorUm = entrada;
+    }else if(entrada > maiorDois && maiorDois < maiorUm){
+        maiorDois = entrada;
+    }
+}
+console.log(maiorUm * maiorDois);
+
+    </script>
+</body>
+</html>

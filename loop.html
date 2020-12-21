@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var valor = prompt('Digite um valor: ');
+        var index = 1;
+
+        if(isNaN(valor)){
+            console.log('Tente novamente!');
+        }else{
+            var opcao = prompt('Qual laço você quer utilizar? 1 - For e 2 - While');
+            if(opcao == 1){
+                for(index = 1; index <= valor; index++){
+                    if(!(valor % index)){ 
+                        console.log('Divisores: ' + index);
+                    }
+                }
+
+            }else if (opcao == 2){
+                while(index <= valor){
+                    if(valor % index == 0){
+                        console.log('Divisores: ' + index);
+                    }
+                    index++;
+                }
+
+            }else{
+                console.log('Digite uma opção válida!');
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

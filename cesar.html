@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var mensagem = prompt("Qual mensagem você deseja encriptar? ");
+        var deslocamento = prompt("Qual o deslocamento você deseja utilizar? ");
+        function cifraCesar(mensagem, deslocamento){
+            var mensagemAlterada = [];
+            mensagem = mensagem.toLowerCase();
+            
+            for(var i = 0; i < mensagem.length; i++){
+                console.log("SEM MODIFICAÇÃO: " + mensagem[i]);
+                console.log("CÓDIGO ASCII: " + mensagem.charCodeAt(i));
+                mensagemAlterada.push(String.fromCharCode((mensagem.charCodeAt(i)) + (deslocamento % 26)));
+                console.log("COM MODIFICAÇÃO: " + mensagemAlterada[i]);
+            }
+
+            console.log("Sua mensagem alterada foi: " + mensagemAlterada);
+        }
+        cifraCesar(mensagem, deslocamento);
+    </script>
+    
+</body>
+</html>
