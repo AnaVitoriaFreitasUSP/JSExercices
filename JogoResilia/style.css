@@ -1,0 +1,32 @@
+#primeiraDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#paragrafoInicio{
+    font-weight: bold;
+    color: rgb(255, 101, 40);
+    font-size: 30px;
+}
+
+#recebeNomeJogador{
+    position: center;
+    border-radius: 6px 9px;
+}
+
+
+#botao{
+    background-color: coral;
+    padding: 10px;
+    border: 10px;
+    border-radius: 20px 10px;
+
+}
+
+#bodyJogo{
+    background-image: url("gatinho.gif");
+}
+
+
+
